@@ -1,39 +1,87 @@
 /* BASIC SETUP FOR CSS STYLE */
-
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto Slab', serif;
-}
-
-
+* {margin: 0;padding: 0;outline: 0;box-sizing: border-box;}
+body {font-family: 'Roboto Slab', serif;}
+h1,h2,h3,h4,h5,h6,p,a,ul,ol,input{padding: 0;margin: 0;}
 /* COMMON CSS */
+.bg-gray {background-color: #edeff1 !important;}
+.text-gray {color: #63676e !important;}
+.text-black {color: #31353e !important;}.bg-tomato {background-color: #dd4b2b !important;}
+.bg-indigo {background-color: #4b4e73 !important;}
+.bg-orang {background-color: #d75d0e !important;}
+/* NAVIGATION CSS */
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link {padding: 6px 18px;}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {color: #ffffff !important;background-color: #dd4b2b;border-radius: 25px;}
+.navbar-dark .active{color: #ffffff !important;background-color: #dd4b2b;border-radius: 25px;}
+/* HEADER CSS */
+header{background: url(../../resource/img/banner.png) no-repeat;background-size: cover;background-position: center center;}
+header h1{font-size: 55px;margin-top: 125px;}
+header p{font-size: 22px;}
+/* FOOD MENU CSS */
+.food-card p {margin-top: 5px;font-size: 12px;line-height: 1.8em;color: #D1D5D9 !important;}
+.btn-readmore {color: #612316;padding: 10px 30px;border-radius: 25px;bottom: 0;outline: 0;}
 
-.bg-gray {
-    background-color: #edeff1 !important;
-}
 
-.text-gray {
-    color: #63676e !important;
-}
 
-.text-black {
-    color: #31353e !important;
-}
 
-.bg-tomato {
-    background-color: #dd4b2b !important;
-}
 
-.bg-indigo {
-    background-color: #4b4e73 !important;
-}
 
-.bg-orang {
-    background-color: #d75d0e !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEVICE RESPONSIVE CSS STYLE */
+
+@media (min-width: 320px) and (max-width: 768px){
+    body{text-align: center;}
+    /* Hero Responsive */
+    header h1 {
+        font-size: 32px;
+        margin-top: 0;
+    }
+    header p {
+        font-size: 18px;
+        margin: 0;
+    }
+    .food-card img{
+        width: 100px;
+    }
+    .food-card h3{
+        font-size: 18px;
+    }
+    .food-card p{
+        font-size: 12px;
+    }
 }
