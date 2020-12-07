@@ -10,3 +10,30 @@
 body {
     font-family: 'Roboto Slab', serif;
 }
+
+
+/* COMMON CSS */
+
+.bg-gray {
+    background-color: #edeff1 !important;
+}
+
+.text-gray {
+    color: #63676e !important;
+}
+
+.text-black {
+    color: #31353e !important;
+}
+
+.bg-tomato {
+    background-color: #dd4b2b !important;
+}
+
+.bg-indigo {
+    background-color: #4b4e73 !important;
+}
+
+.bg-orang {
+    background-color: #d75d0e !important;
+}
