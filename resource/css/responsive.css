@@ -1,0 +1,20 @@
+/* MOBILE DEVICE RESPONSIVE CSS STYLE */
+@media (min-width: 320px) and (max-width: 768px){
+    body{text-align: center;}
+    /* Hero Responsive */
+    header h1 {font-size: 32px;margin-top: 0;}
+    header p {font-size: 18px;margin: 0;}
+    .food-card h3{font-size: 18px;}
+    .food-card p {font-size: 14px;margin-bottom: 15px;}
+    /* Food News Responsive */
+    .food-news button {margin-bottom: 15px;}
+    /* Newsletter Responsive */
+    #newsletter h3 {margin: 5px !important;}
+    #newsletter p {width: 100% !important;}
+    .newsletter-form input {position: static;border-radius: 25px;width: 100%;}
+    .newsletter-form input[type="submit"] {position: static;margin-top: 15px;width: 60%;}
+}
+/* TABLET DEVICE RESPONSIVE CSS STYLE */
+@media(max-width: 992px){
+    .newsletter-form input[type="submit"] {right: 200px;}
+}

@@ -1,16 +1,9 @@
 /* BASIC SETUP FOR CSS STYLE */
 * {margin: 0;padding: 0;outline: 0;box-sizing: border-box;}
-
-#loading{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #ffffff 
-    url(../../resource/img/preloader.gif) no-repeat center;
-    z-index: 999999;
-}
-
+#loading{position: fixed;width: 100%;height: 100vh;background: #ffffff url(../../resource/img/preloader.gif) no-repeat center;z-index: 999999;}
 body {font-family: 'Roboto Slab', serif;}
+ul{list-style: none;}
+a,a:hover{text-decoration: none;}
 h1,h2,h3,h4,h5,h6,p,a,ul,ol,input{padding: 0;margin: 0;}
 /* COMMON CSS */
 .bg-gray {background-color: #edeff1 !important;}
@@ -39,79 +32,17 @@ header p{font-size: 22px;}
 /* NEWSLETTER CSS */
 .news-letter{background:linear-gradient(rgba(99,103,110,0.3),rgba(99,103,110,0.3)),url(../../resource/img/newsletter.png) no-repeat; background-size: cover;background-position: center top;}
 .newsletter-form input{position: relative;padding: 12px 50px; border: none; outline: 0; background: #ffffff61;border-radius: 25px 0px 0px 25px;border: 1px solid #ffffff;}
+.newsletter-form input:focus[type="email"]{border: 1px solid #d75d0e;}
 .newsletter-form input[type="submit"] {border-radius: 25px;border: 1px solid #ffffff;color: #612316;position: absolute;right: 310px;}
-
+.newsletter-form input:hover[type="submit"] {background: #d75d0e !important;border: 1px solid #d75d0e;}
 /* BLANDIT RHONCUS CSS*/
-.blandit-rhoncus button {padding-left: 50px;padding-right: 50px;
-	border-radius: 25px;
-}
-.blandit-rhoncus h3 {
-	font-size: 24px;
-}
-.blandit-rhoncus .left-side p, .blandit-rhoncus .sign-up-two .right-side p {
-	font-size: 14px;
-	color: #31353e !important;
-}
-.blandit-rhoncus .sign-up-one button:hover {
-	background: #ac3200 !important;
-}
-.blandit-rhoncus .sign-up-two button:hover {
-	background: #272A4F !important;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* DEVICE RESPONSIVE CSS STYLE */
-
-@media (min-width: 320px) and (max-width: 768px){
-    body{text-align: center;}
-    /* Hero Responsive */
-    header h1 {font-size: 32px;margin-top: 0;}
-    header p {font-size: 18px;margin: 0;}
-    .food-card h3{font-size: 18px;}
-    .food-card p{font-size: 12px;}
-    /* Newsletter Responsive */
-    #newsletter h3 {margin: 5px !important;}
-    .newsletter-form input {position: static;border-radius: 25px;width: 100%;}
-    .newsletter-form input[type="submit"] {position: static;margin-top: 15px;width: 60%;}
-
-}
+.blandit-rhoncus button {padding-left: 50px;padding-right: 50px;border-radius: 25px;}
+.blandit-rhoncus h3 {font-size: 24px;}
+.blandit-rhoncus .left-side p, .blandit-rhoncus .sign-up-two .right-side p {font-size: 14px;color: #31353e !important;}
+.blandit-rhoncus .sign-up-one button:hover {background: #ac3200 !important;}
+.blandit-rhoncus .sign-up-two button:hover {background: #272A4F !important;}
+/* FOOTER OR PLACERAT CSS */
+.top-footer .footer-link li{margin: 10px auto;}
+.top-footer .footer-link a{color: #ffffff;}
+.top-footer .footer-link a:hover{color: #dddddd;}
+.bottom-footer{background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../../resource/img/newsletter.png) no-repeat; background-position: center;}
