@@ -1,5 +1,15 @@
 /* BASIC SETUP FOR CSS STYLE */
 * {margin: 0;padding: 0;outline: 0;box-sizing: border-box;}
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff 
+    url(../../resource/img/preloader.gif) no-repeat center;
+    z-index: 999999;
+}
+
 body {font-family: 'Roboto Slab', serif;}
 h1,h2,h3,h4,h5,h6,p,a,ul,ol,input{padding: 0;margin: 0;}
 /* COMMON CSS */
@@ -41,6 +51,12 @@ header p{font-size: 22px;}
 .blandit-rhoncus .left-side p, .blandit-rhoncus .sign-up-two .right-side p {
 	font-size: 14px;
 	color: #31353e !important;
+}
+.blandit-rhoncus .sign-up-one button:hover {
+	background: #ac3200 !important;
+}
+.blandit-rhoncus .sign-up-two button:hover {
+	background: #272A4F !important;
 }
 
 

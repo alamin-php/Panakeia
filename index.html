@@ -21,7 +21,8 @@
 
 </head>
 
-<body id="page-top">
+<body onload="loadingFunction()" id="page-top">
+    <div id="loading"></div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-gray fixed-top" id="mainNav">
@@ -192,7 +193,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 left-side">
-                            <img src="resource/img/signup1.png" alt="Signup Photo" class="img-fluid">
+                            <img src="resource/img/signup2.png" alt="Signup Photo" class="img-fluid">
                         </div>
                         <div class="col-md-6 right-side px-5 py-5">
                             <h3 class="mb-3">Ipsum dolor sit amet</h3>
@@ -220,6 +221,12 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js "></script>
     <!-- Custom scrolling-nav JavaScript for this theme -->
     <script src="resource/js/scrolling-nav.js "></script>
+    <script>
+        var perloader = document.getElementById('loading'); 
+       function loadingFunction(){
+           perloader.style.display = 'none';
+       }
+    </script>
     <!-- Main JavaScript for this theme -->
     <script src="resource/js/main.js "></script>
 
